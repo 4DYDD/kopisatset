@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*,
+html,
+body,
+input,
+form,
+textarea,
+select,
+button,
+a {
+  font-family: Quicksand, sans-serif;
+}
