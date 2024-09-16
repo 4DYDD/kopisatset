@@ -11,5 +11,13 @@ textarea,
 select,
 button,
 a {
-  font-family: Quicksand, sans-serif;
+  font-family: Figtree, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  filter: drop-shadow();
+}
+.inconku {
+  filter: drop-shadow(0px 0px 1px rgb(50, 50, 50));
 }

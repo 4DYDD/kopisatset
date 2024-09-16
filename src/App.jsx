@@ -1,13 +1,33 @@
 import { useState } from "react";
 import "./css/index.css";
-
+import Layout from "./components/Layout";
+import Home from "./components/Home";
+import Navbar from "./components/navbar";
+import About from "./components/About";
+import Rating from "./components/Rating";
+import Contact from "./components/Contact";
 function App() {
   return (
     <>
-      <center className="absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%]">
-        <div className="font-bold">Halo Gais!</div>
-        <div className="">Selamat Datang di Web Kopi SatSet (fake-dev)</div>
-      </center>
+      <main className="relative">
+        <Navbar />
+
+        <Layout>
+          <Home />
+        </Layout>
+
+        <Layout>
+          <About />
+        </Layout>
+
+        <Layout>
+          <Rating />
+        </Layout>
+
+        <Layout>
+          <Contact />
+        </Layout>
+      </main>
     </>
   );
 }
